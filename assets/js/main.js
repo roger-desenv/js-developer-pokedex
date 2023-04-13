@@ -45,3 +45,12 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+
+
+//============Popup de Detalhes Pokemos=============//
+
+function novaAbaPokemons() {
+    window.open('http://www.google.com.br', '_blank');
+}
+
+  
