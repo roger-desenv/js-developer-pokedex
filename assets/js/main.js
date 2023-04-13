@@ -10,7 +10,7 @@ function convertPokemonToLi(pokemon) {
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
-
+            
             <div class="detail">
                 <ol class="types">
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
@@ -47,10 +47,10 @@ loadMoreButton.addEventListener('click', () => {
 })
 
 
-//============Popup de Detalhes Pokemos=============//
+//============Nova Página - Detalhes Pokemos=============//
 
-function novaAbaPokemons() {
-    window.open('http://www.google.com.br', '_blank');
-}
+document.querySelector('.pokemons').addEventListener('click', () => {
+    window.location = 'detalhes-pokemons.html'
+  })
 
   
