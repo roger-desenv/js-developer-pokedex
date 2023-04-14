@@ -20,7 +20,11 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                     alt="${pokemon.name}">
             </div>
-        </li>       
+            <button type="button" class="btn btn-success" id="clickme" style="display: block; margin-left: auto; margin-right: auto; justify-content: center;">
+                Details
+            </button> 
+        </li>
+           
     `
 }
 
